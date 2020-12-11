@@ -1,0 +1,87 @@
+# -----------------------------------------------------------------------------
+# Asciidoctor PDF Theme for technical documentation and tutorials.
+# -----------------------------------------------------------------------------
+page:
+  layout: portrait
+  margin: [10mm, 15mm, 10mm, 15mm]
+  size: a4
+base:
+  font_color: #333333
+  font_family: Clear Sans
+  font_style: normal
+  font_size: 12
+  line_height_length: 14
+  line_height: $base_line_height_length / $base_font_size
+vertical_spacing: $base_line_height_length
+heading:
+  font_color: #1d4e89
+  font_family: Clear Sans
+  font_size: 16
+  font_style: normal
+  line_height: 1
+  margin_bottom: $vertical_spacing / 1.5
+  margin_top: $vertical_spacing / 1.2
+code:
+  font_color: #333333
+  font_family: Courier Prime Sans
+  font_style: normal
+  font_size: 10
+  background_color: #f5f5f5
+  border_color: #cccccc
+  border_radius: 2
+literal:
+  font_family: Courier Prime Sans
+  font_style: bold
+link:
+  font_color: #002FA7
+description_list:
+  description_indent: $base_font_size * 2.5
+outline_list:
+  indent: $base_font_size * 2.5
+table:
+  border_width: 0
+  cell:
+    padding: 3
+  head:
+    font_size: 10
+  body:
+    font_size: 9
+  foot:
+    font_size: 9
+conum:
+  font_family: M+ 1mn
+  font_color: #0f80aa
+  line_height: 4 / 3
+  glyphs: filled
+key:
+  background_color: #f5f5f5
+  border_color: #cccccc
+  border_offset: 2
+  border_radius: 2
+  border_width: 0.5
+  font_family: M+ 1mn
+  font_style: bold
+  separator: "\u202f+\u202f"
+
+## ----------------------------------------------------------------------------
+## Fonts 
+## ----------------------------------------------------------------------------
+font:
+  catalog:
+    Courier Prime Sans:
+      normal: Courier Prime Sans.ttf
+      bold: Courier Prime Sans Bold.ttf
+      italic: Courier Prime Sans Italic.ttf
+      bold_italic: Courier Prime Sans Bold Italic.ttf
+    Clear Sans:
+      normal: ClearSans-Regular.ttf
+      bold: ClearSans-Bold.ttf
+      italic: ClearSans-Italic.ttf
+      bold_italic: ClearSans-BoldItalic.ttf
+    M+ 1mn:
+      normal: GEM_FONTS_DIR/mplus1mn-regular-subset.ttf
+      bold: GEM_FONTS_DIR/mplus1mn-bold-subset.ttf
+      italic: GEM_FONTS_DIR/mplus1mn-italic-subset.ttf
+      bold_italic: GEM_FONTS_DIR/mplus1mn-bold_italic-subset.ttf
+  fallbacks: 
+    - M+ 1mn

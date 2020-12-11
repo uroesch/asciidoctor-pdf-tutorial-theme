@@ -1,0 +1,13 @@
+# -----------------------------------------------------------------------------
+# Asciidoctor builds for PDF themes 
+# Author: Urs Roesch roesch@puzzle.ch
+# Version: 0.2.0 
+# -----------------------------------------------------------------------------
+image: "uroesch/docker-asciidoctor"
+
+build-with-theme:
+  tags:
+    - docker
+  script: rake test
+  only:
+    - merge_request

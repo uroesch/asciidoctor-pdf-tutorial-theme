@@ -1,0 +1,2 @@
+= AsciiDoc Syntax - Article
+include::syntax.adoc[]
