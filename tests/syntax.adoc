@@ -275,7 +275,7 @@ comment - content which is not included in the output document
 
 image::screenshot.png[block image,800,450]
 
-Press image:reload.svg[reload,16,opts=interactive] to reload the page.
+Press image:reload.svg[reload,60,opts=interactive] to reload the page.
 
 video::movie.mp4[width=640,start=60,end=140,options=autoplay]
 
