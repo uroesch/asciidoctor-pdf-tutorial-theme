@@ -1,0 +1,39 @@
+# -----------------------------------------------------------------------------
+# Build Asciidoctor PDF sample syntax file with theme
+# Author: Urs Roesch https://github.com/uroesch
+# Version: 0.1.0
+# -----------------------------------------------------------------------------
+name: build-sample-pdfs
+
+on:
+  push:
+    branches:
+    - workflow/*
+  pull_request:
+    branches:
+    - master
+    - main
+
+jobs:
+  build-sample-pdfs:
+    timeout-minutes: 10
+    runs-on: ${{ matrix.os }}
+    container: uroesch/docker-asciidoctor:latest
+    strategy:
+      fail-fast: true
+      matrix:
+        os:
+        - ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      with:
+        ref: master
+        submodules: recursive
+
+    - name: Test theme
+      shell: bash
+      run: |2+
+        set -x
+        rake test
