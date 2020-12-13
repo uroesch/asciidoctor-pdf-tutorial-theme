@@ -38,6 +38,28 @@ description_list:
   description_indent: $base_font_size * 2.5
 outline_list:
   indent: $base_font_size * 2.5
+title_page:
+  font_family: Clear Sans Thin
+  font_color: ffffff
+  background_color: #1d4e89
+  align: center
+  #logo:
+  #  top: 10%
+  #  image: image:images/puzzle_stamp_white.svg[width=30%, align=center]
+  title:
+    top: 30%
+    font_size: $base_font_size * 4.25
+    font_family: Clear Sans
+    font_style: bold
+    line_height: 0.9
+  subtitle:
+    font_size: $base_font_size * 2.00
+    line_height: 1
+  authors:
+    margin_top: $base_font_size * 29.25
+    font_size: $base_font_size * 1.5
+  revision:
+    margin_top: $base_font_size * 0.5
 table:
   border_width: 0
   cell:
@@ -78,6 +100,13 @@ font:
       bold: ClearSans-Bold.ttf
       italic: ClearSans-Italic.ttf
       bold_italic: ClearSans-BoldItalic.ttf
+    Clear Sans Thin:
+      normal: ClearSans-Thin.ttf
+    Clear Sans Light:
+      normal: ClearSans-Light.ttf
+    Clear Sans Medium:
+      bold: ClearSans-Medium.ttf
+      bold_italic: ClearSans-MediumItalic.ttf
     M+ 1mn:
       normal: GEM_FONTS_DIR/mplus1mn-regular-subset.ttf
       bold: GEM_FONTS_DIR/mplus1mn-bold-subset.ttf
