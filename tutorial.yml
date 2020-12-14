@@ -26,8 +26,8 @@ code:
   font_family: Courier Prime Sans
   font_style: normal
   font_size: 10
-  background_color: #f5f5f5
-  border_color: #cccccc
+  background_color: #f6f6f6
+  border_color: #0f80aa
   border_radius: 2
 literal:
   font_family: Courier Prime Sans
