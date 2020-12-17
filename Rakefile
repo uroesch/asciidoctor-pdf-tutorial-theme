@@ -20,6 +20,7 @@ def docker_asciidoctor(program = 'asciidoctor')
     '--tty',
     "--mount type=bind,src=#{BASE_DIR},target=#{BASE_DIR}",
     " --workdir=#{BASE_DIR}",
+    " --user=#{Process.uid}:#{Process.gid}",
     DOCKER_IMAGE,
     program
   ]
