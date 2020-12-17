@@ -28,9 +28,6 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
-      with:
-        ref: master
-        submodules: recursive
 
     - name: Test theme
       shell: bash
