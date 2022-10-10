@@ -48,12 +48,16 @@ task :default => :test
 task :test => SAMPLES_DIR do
   %w(article book manpage).each do |type|
     sh %(#{asciidoctor_pdf} ) +
-      %(-a pdf-stylesdir=. ) +
-      %(-a pdf-style=#{THEME}.yml ) +
+      %(-a pdf-themesdir=. ) +
+      %(-a pdf-theme=#{THEME}.yml ) +
       %(-a pdf-fontsdir=./fonts ) +
       %(-a iconsdir=./icons ) +
       %(-a doctype=#{type} ) +
       %(-o "samples/#{type}.pdf" ) +
       %("tests/#{type}.adoc")
   end
+end
+
+task :clean do
+  rm Rake::FileList["#{SAMPLES_DIR}/*pdf"]
 end

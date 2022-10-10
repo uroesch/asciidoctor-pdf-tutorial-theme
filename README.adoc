@@ -23,8 +23,8 @@ Run `asciidoctor-pdf` with the following additional options:
 [source,shell]
 ----
 asciidoctor-pdf \
-  -a pdf-stylesdir=tutorial \
-  -a pdf-style=tutorial.yml \
+  -a pdf-themesdir=tutorial \
+  -a pdf-theme=tutorial.yml \
   -a pdf-fontsdir=tutorial/fonts \
   -a iconsdir=tutorial/icons \
   "book.adoc"
